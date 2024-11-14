@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+
+    height:100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/background4.jpg");
+    
+    background-size: cover;
+    text-align: center;
+    color: #f3f3f3;
+
+}
+
+.button3 {width: 100%;}
+.required::first-line{
+    content: '*';
+    color: red;
+}
+.sub-header h1{
+    color: #fff;
+    font-size:60px;
+    margin-top: 25px;
+}
+.container{
+   
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: black;
+}
+nav{
+    background: #fff;
+   background-image: linear-gradient(crimson,yellow);
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+     
+}
+
+ nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 13px 15px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+}
+nav ul li :hover{
+
+    background-color: #fdfdfd;
+    color: black;
+      
+}
+nav ul li a:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+ 
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+    
+
+
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color:#fff;
+    padding: 140px;
+    box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+}
+.inner-container h1{
+    margin-bottom: 30px;
+   font-size: 30px ;
+   font-weight: 900;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.container1 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+/*@keyframes shakes{
+    0%,100%{translate: 0;}
+    25%{translate: 8px 0;}
+    75%{translate: -8px 0;}
+}*/
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input
+{
+     height: 45px;
+     width: 100%;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     padding-left: 15px;
+     font-size: 16px;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+/*dropdown list*/
+ select option .dropdown{
+     width: 150px;
+    height: 70px;
+    font-size: 10px;
+}
+
+
+
+form .button1{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button1 input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .button1 input:hover{
+    background:linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+@media(max-width: 584px){
+    .container{
+        max-width: 100%; ;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width:100%;
+    
+    }
+    .container1 form .user-details{
+        max-height: 300PX;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+/* Login*/
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background:#f3f3f3;
+    color: #000000;
+    top:70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    
+}
+.loginbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.loginbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+.loginbox input[type="Submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:  red;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="Submit"]:hover
+{
+    cursor: pointer;
+    background: gold;
+    color: #000000;
+    
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(99, 73, 73);
+}
+.loginbox a:hover
+{
+    color:gold;
+
+}
+/* Registration*/
+.registrationbox{
+    width: 500px;
+    height: 780px;
+    background:#f3f3f3;
+    color: #000000;
+    top:95%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    
+}
+.registrationbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.registrationbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+.registrationbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.registrationbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+.registrationbox input[type="Submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:  red;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.registrationbox input[type="Submit"]:hover
+{
+    cursor: pointer;
+    background: gold;
+    color: #000000;
+    
+}
+.registrationbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(99, 73, 73);
+}
+.registrationbox a:hover
+{
+    color:gold;
+
+}
+
+/*Button4*/
+form .button4{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button4 input{
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+    
+}
+form .button4 input:hover{
+    background:linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+/*Message*/
+form .user-details .input-box1{
+    margin-bottom: 15px;
+    width: calc(200% /2 - 20px);
+
+}
+.user-details .input-box1 .details1{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box1 input
+{
+     height: 90px;
+     width: 100%;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     padding-left: 15px;
+     font-size: 16px;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+}
+.user-details .input-box1 input:focus,
+.user-details .input-box1 input:valid{
+    border-color: #9b59b6;
+}
+.button7 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+       
+ }
+ .btn1{
+     border: 1px solid #fff;
+     padding: 10px 30px;
+     color: #fff;
+     text-decoration: none;
+     transition: 0.6s ease;   
+ }
+ .btn1:hover{
+     background-color: #fff;
+     color:#000000;
+     
+ }
+ .logout{
+       background: url("../img/logout.jpg") no-repeat left ;
+ }
+
+ .input-box3 a{
+     
+     border-radius: 30px;
+     transition: 0.3s ease;
+     color: black;
+     padding: 5px 5px;
+ }
+ 
+ .footer{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    top: 1000%;
+    background-color: aqua;
+    alignment-baseline: central;
+ }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Mar, 2023, 3:02:36 PM
+    Author     : nikhi
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2023, 8:29:51 AM
+    Author     : 91880
+*/
+

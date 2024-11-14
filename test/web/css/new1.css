@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 Mar, 2023, 3:55:03 PM
+    Author     : nikhi
+*/
+
+body .Register{
+     display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/nature31.jpg");
+}
+.container1{
+    max-width: 1200px;
+    width: 100%;
+   background: #f44566;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+    
+}
+.container1 .registration{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    
+
+}
+.container1 .registration::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg);
+    
+}
+.container1 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+/*@keyframes shakes{
+    0%,100%{translate: 0;}
+    25%{translate: 8px 0;}
+    75%{translate: -8px 0;}
+}*/
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input
+{
+     height: 45px;
+     width: 100%;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     padding-left: 15px;
+     font-size: 16px;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+ .button6 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+       
+ }
+
